@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>1995</title>
+  <meta charset="utf-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">  
+  <link href="https://fonts.googleapis.com/css?family=Exo|Satisfy|Handlee" rel="stylesheet">  
+  <link href="img/icon.ico" rel="shortcut icon">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>  
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" width="60" height="60" class="d-inline-block align-top" alt="logo">      
+    </a>
+    <span class="eslogan">The Best Flavor</span>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="1995.html">Quienes Somos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="productos.html">Productos </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Contacto</a>
+        </li>
+      </ul>    
+    </div>
+  </nav>
+  <section>
+    <div class="container">
+      <div class="container-formulario">
+        <h4 class="text-center ubicacion">UBICACIÓN</h4>
+        <div class="container">
+          <iframe src="https://www.mapsdirections.info/crear-un-mapa-de-google/map.php?width=100%&height=600&hl=en&q=Samac%C3%A1%20Cl.4+(1995)&ie=UTF8&t=&z=18&iwloc=A&output=embed" style="border:0" allowfullscreen="" frameborder="0" height="250" width="100%"></iframe>        
+          <strong class="contacto">CONTACTENOS</strong><br><strong class="contacto">Oficina: 123456789</strong>
+          <hr class="separacion">
+        </div>
+        <div class="container">
+          <form role="form" id="Formulario" action="#" method="POST">
+            <div class="row">
+              <div class="col-lg-6 form-group">
+                <label class="control-label" for="Nombre">Nombres</label>
+                <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Introduzca su nombre" required autofocus />
+              </div>            
+              <div class="col-lg-6 form-group">
+                <label class="control-label" for="Motivo">Motivo de Contacto</label>
+                <select name="Motivo" class="form-control">
+                  <option value="Consulta General">Consulta General</option>
+                  <option value="Realizar Pedido">Realizar Pedido</option>
+                  <option value="Informe un problema">Informe un problema</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6 form-group">
+                    <label class="control-label" for="Empresa">Empresa</label>
+                    <input type="text" class="form-control" id="Empresa" name="Empresa" placeholder="Introduzca el nombre de su empresa" required />
+                </div>
+                <div class="col-lg-6 form-group">
+                    <label class="control-label" for="Correo">Dirección de Correo Electrónico</label>
+                    <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Introduzca su correo electrónico" required />
+                </div>
+            </div>                              
+            <div class="form-group">
+              <label class="control-label" for="Mensaje">Mensaje</label>
+              <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="Mensaje" placeholder="Introduzca su mensaje" required ></textarea>
+            </div>                
+            <div id="respuesta" style="display: none;"></div>
+            <div class="row justify-content-center">
+              <div class=" col-lg-4 form-group">                
+                <input type="submit" class="btn btn-primary" value="Enviar">                    
+              </div>
+              <div class=" col-lg-4 form-group">                
+                <input type="reset" class="btn btn-danger" value="Limpiar">                
+              </div>
+            </div>                                
+          </form>
+      </div>       
+    </div>
+  </section>
+</body>
+</html>
